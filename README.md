@@ -12,3 +12,9 @@ Flutter test task representing gallery
 # Mocked Credentials
 - Username: test
 - Password: 1111
+
+# Technical Details
+- State Management: Provider
+- Image Loading: Cached Network Image
+- Image picker: image_picker
+- HTTP Requests: DIO

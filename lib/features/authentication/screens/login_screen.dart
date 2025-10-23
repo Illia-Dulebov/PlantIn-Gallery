@@ -83,9 +83,11 @@ class _LoginScreenState extends State<LoginScreen> {
         });
 
     Future.delayed(const Duration(seconds: 3), () {
-      setState(() {
-        errorMessage = null;
-      });
+      if (mounted) {
+        setState(() {
+          errorMessage = null;
+        });
+      }
     });
   }
 }
